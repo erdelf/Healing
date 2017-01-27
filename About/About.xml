@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Healing</name>
+  <author>erdelf</author>
+  <url></url>
+  <targetVersion>0.16.0</targetVersion>
+  <description>This mod adds remote healing charges to the remote explosive mod.\n Scars and old wounds won't be healed. The healing won't work instantly but requires longer exposure to the gas. 
+    </description>
+</ModMetaData>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HediffDefs>
+
+<HediffDef Class="Healing.Hediff_HealDef">
+<hediffClass>Healing.Hediff_Heal</hediffClass>
+<defName>PFStimpakHeal</defName>
+<label>Healing from Stimpack</label>
+<maxHealedInjuries>10</maxHealedInjuries>
+<healsOld>true</healsOld>
+<healsNaturalHealing>true</healsNaturalHealing>
+<healsTendableHealing>true</healsTendableHealing>
+<healsInfections>true</healsInfections>
+<maxRegenerateLimbs>-1</maxRegenerateLimbs>
+<severityHeal>50000</severityHeal>
+</HediffDef>
+
+<HediffDef Class="Healing.Hediff_HealDef">
+<hediffClass>Healing.Hediff_Heal</hediffClass>
+<defName>PFSuperStimpackHeal</defName>
+<label>Healing from Super Stimpack</label>
+<maxHealedInjuries>-1</maxHealedInjuries>
+<healsOld>true</healsOld>
+<healsNaturalHealing>true</healsNaturalHealing>
+<healsTendableHealing>true</healsTendableHealing>
+<healsInfections>true</healsInfections>
+<maxRegenerateLimbs>0</maxRegenerateLimbs>
+<severityHeal>35</severityHeal>
+</HediffDef>
+
+<HediffDef Class="Healing.Hediff_HealDef">
+<hediffClass>Healing.Hediff_Heal</hediffClass>
+<defName>PFSuperStimpackHeal</defName>
+<label>Healing from Super Stimpack</label>
+<maxHealedInjuries>-1</maxHealedInjuries>
+<healsOld>true</healsOld>
+<healsNaturalHealing>true</healsNaturalHealing>
+<healsTendableHealing>true</healsTendableHealing>
+<healsInfections>true</healsInfections>
+<maxRegenerateLimbs>2</maxRegenerateLimbs>
+<severityHeal>50</severityHeal>
+</HediffDef>
+
+</HediffDefs>

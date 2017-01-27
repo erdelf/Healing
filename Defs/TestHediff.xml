@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HediffDefs>
+	<HediffDef Class="Healing.Hediff_HealDef">
+    <hediffClass>Healing.Hediff_Heal</hediffClass>
+		<defName>heal</defName>
+		<label>healing</label>
+    <maxHealedInjuries>2</maxHealedInjuries>
+		<healsOld>true</healsOld>
+		<healsNaturalHealing>true</healsNaturalHealing>
+		<healsTendableHealing>true</healsTendableHealing>
+		<healsInfections>true</healsInfections>
+		<maxRegenerateLimbs>0</maxRegenerateLimbs>
+		<severityHeal>30</severityHeal>
+	</HediffDef>
+</HediffDefs>
