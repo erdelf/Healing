@@ -3,7 +3,7 @@ using Verse;
 
 namespace Healing
 {
-    public class Hediff_Heal : Hediff
+    public class Hediff_Heal : HediffWithComps
     {
         
 
@@ -15,7 +15,7 @@ namespace Healing
 
             Hediff_HealDef def = this.def as Hediff_HealDef;
 
-            if (pawn != null)
+            if (this.pawn != null)
             {
                 Log.Message("pawn there");
                 int counter = 0;
@@ -24,14 +24,14 @@ namespace Healing
                     Log.Message("heal injuries");
 
                     counter = def.maxHealedInjuries;
-                    foreach (Hediff_Injury current in pawn.health.hediffSet.GetHediffs<Hediff_Injury>())
+                    foreach (Hediff_Injury current in this.pawn.health.hediffSet.GetHediffs<Hediff_Injury>())
                     {
                         bool heal = false;
                         Log.Message(current.Label);
                         if (counter != 0)
                         {
                             Log.Message("counter");
-                            if (current.IsOld() && def.healsOld)
+                            if (current.IsPermanent() && def.healsOld)
                                 heal = true;
                             if (current.CanHealNaturally() && def.healsNaturalHealing)
                                 heal = true;
@@ -51,11 +51,11 @@ namespace Healing
                 {
                     counter = def.maxRegenerateLimbs;
 
-                    while(pawn.health.hediffSet.GetMissingPartsCommonAncestors().Count > 0)
+                    while(this.pawn.health.hediffSet.GetMissingPartsCommonAncestors().Count > 0)
                     {
                         if (counter == 0)
                             break;
-                        pawn.health.RestorePart(pawn.health.hediffSet.GetMissingPartsCommonAncestors()[0].Part);
+                        this.pawn.health.RestorePart(this.pawn.health.hediffSet.GetMissingPartsCommonAncestors()[0].Part);
                         counter--;
                     }
                         
